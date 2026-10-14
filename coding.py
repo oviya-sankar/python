@@ -118,4 +118,51 @@ output:
 output:
       Enter number:1324
       Not Amstrong number
+1)n=int(input("Enter the number:"))
+   sq=n*n
+  if str(sq).endswith(str(n)):
+      print("Automorphic number")
+  else:
+     print("Not an automorphic number")
+
+output:
+     Enter the number:8675
+     Not an automorphic number
+
+2)n=int(input("Enter a number:"))
+   sq=n*n
+   s=sum(int(d)for d in str(sq))
+   if s==n:
+      print("Neon number")
+   else:
+      print("Not a Neon number")
+
+output:
+     Enter a number:1
+     Neon number
+
+3)n=int(input("Enter a number:"))
+   s=0
+   for i in range(1,n):
+       if n%i==0:
+           s+=i
+   if s==n:
+      print("Perfect number")
+  else:
+     print("Not a perfect number")
+ 
+output:
+       Enter a number:69087
+       Not a perfect number
+
+4)n=input("Enter a number:")
+   if n==n[::-1]:
+      print("Palindrome number")
+  else:
+     print("Not a Plindrome")
+
+output:
+       Enter a number:7
+       Palindrome number
+
        
